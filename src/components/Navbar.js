@@ -6,9 +6,15 @@ import { useNavigate } from 'react-router-dom';
 const NavbarContainer = styled.nav`
   background-color: #333;
   padding: 1rem;
+  flex-wrap: wrap;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const NavLogo = styled.h1`
